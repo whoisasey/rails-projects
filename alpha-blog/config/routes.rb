@@ -5,5 +5,5 @@ Rails
     root 'pages#home'
 
     get 'about', to: 'pages#about'
-    resources :articles, only: [:show, :index]
+    resources :articles, only: %i[show index new create]
   end
